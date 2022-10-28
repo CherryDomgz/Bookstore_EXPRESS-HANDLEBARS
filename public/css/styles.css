@@ -1,0 +1,511 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arvo';
+    background-color: #FBE78C;
+}
+
+/*---------------------HEADER AND FOOTER---------------*/
+.navbar {
+    background-color: #704500;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.navbar img {
+    float: left;
+    padding: 3px; 
+    margin-left: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    float: none;
+    text-align: right;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar ul li {
+    display: inline;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #f9d641;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #f9d641;
+    color:#704500;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar ul li a {
+        display: none;
+    }
+    .navbar a.icon {
+      float: right;
+      display: block;
+      color: #f9d641;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 20px;
+      top: 30px;
+    }
+    .navbar.responsive ul li a{
+      float: none;
+      display: block;
+      text-align: right;
+      margin-top: 20px;
+    }
+  }
+
+
+.footer {
+  background-color: #704500;
+  overflow: hidden;
+  text-align: center;
+  color: #f9d641;
+  font-size: 12px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer img {
+    float: none;
+    margin-top: 3px;
+}
+
+.footer a {
+    color: #f9d641;
+}
+
+
+/*---------------------HOME---------------*/
+.search-container {
+    padding-top: 8em;
+    margin: auto;
+    max-width: 80%;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    font-size: 20px;
+    color:#704500;
+    border: 1px solid grey;
+    float: left;
+    width: 60%;
+    background: #f1f1f1;
+    margin-bottom: 20px;
+    margin-left: 15%;
+  }
+
+.search-container button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: #704500;
+    color: white;
+    font-size: 20px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer;
+  }
+
+.search-container button:hover {
+    background: #41cef9;
+  }
+
+@media screen and (max-width: 600px) {
+    .search-container {
+        float: none;
+        display: block;
+        max-width: 100%;
+        padding-top: 6em;
+    }
+    .search-container input[type=text]{
+        width: 80%;
+        margin-left: 5%;
+    } 
+
+    .search-container button {
+        width: 10%;
+        float: left;
+    }
+}
+.row {
+    padding: 50px;
+}
+
+.column {
+    margin-top: 50px;
+    float: left;
+    padding: 10px;
+    height: 300px; 
+}
+
+.ads {
+    width: 25%;
+    border: 1px solid #704500;
+}
+.news {
+    width: 75%;
+    border: 1px solid #704500;
+}
+
+.row:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row:after {
+      content: "";
+      display: table;
+      clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        float: none;
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+    } 
+}
+
+/*---------------------book catalog---------------*/
+.card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 #704500;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 #41cef9;
+}
+  
+.container {
+    padding: 0 12px;
+}
+  
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+/*---------------------log in---------------*/
+
+.login-container {
+    padding-top: 6em;
+    margin: auto;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.login-container fieldset {
+    box-shadow: 0 4px 8px 0 #704500;
+    padding-bottom: 30px;
+}
+
+.login-container fieldset h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-container fieldset label {
+    font-weight: normal;
+    float: left;
+    width: 150px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.login-container input[type=text], input[type=password]{
+    padding: 10px;
+    font-size: 20px;
+    color:#704500;
+    border: 1px solid grey;
+    float: left;
+    width: 95%;
+    background: #f1f1f1;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+
+.login-container input:required {
+    border: 3px solid #41cef9;
+}
+
+.login-container button {
+    float: none;
+    width: 20%;
+    padding: 10px;
+    background: #704500;
+    color: white;
+    font-size: 20px;
+    border: 1px solid grey;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    font-family: 'Arvo';
+  }
+
+.login-container button a{
+    color: white;
+    text-decoration: none;
+}
+
+.login-container button:hover {
+    background: #41cef9;
+  }
+
+.login-container button a:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+.login-container fieldset input[type=checkbox]{ 
+        float: left;
+        width: 10px;
+        padding-top:10px;
+    }
+  
+@media screen and (max-width: 1300px) {
+    .login-container {
+        float: none;
+        display: block;
+        width: 50%;
+        padding-top: 6em;
+    }
+    .login-container input[type=text], input[type=password] {
+        width: 90%;
+        margin-left: 10px;
+    } 
+
+    .login-container button {
+        width: 20%;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .login-container {
+        float: none;
+        display: block;
+        width: 60%;
+        padding-top: 6em;
+    }
+    .login-container input[type=text], input[type=password]{
+        width: 90%;
+        margin-left: 10px;
+    } 
+    .login-container button {
+        width: 20%;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .login-container {
+        float: none;
+        display: block;
+        width: 100%;
+        padding-top: 6em;
+    }
+    .login-container input[type=text], input[type=password] {
+        width: 95%;
+        margin-left: 10px;
+    } 
+    .login-container button {
+        width: 20%;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+}
+
+.login-container p {
+    text-align: center;
+}
+
+hr {
+    height: 2px;
+    color: gray;
+    border-width:0;
+    background-color:gray;
+    margin-bottom: 20px;
+}
+
+/*---------------------register---------------*/
+
+.register-container {
+    padding-top: 6em;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.register-container fieldset {
+    box-shadow: 0 4px 8px 0 #704500;
+    padding-bottom: 30px;
+}
+
+.register-container fieldset h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.register-container p {
+    text-align: center;
+}
+
+.register-container fieldset label {
+    font-weight: normal;
+    float: left;
+    width: 150px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.register-container input{
+    padding: 10px;
+    font-size: 20px;
+    color:#704500;
+    border: 1px solid grey;
+    float: left;
+    width: 95%;
+    background: #f1f1f1;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+
+.register-container input[type=date] {
+      color: grey;
+  }
+
+.register-container input:required {
+    border: 3px solid #41cef9;
+}
+
+.register-container button {
+    float: none;
+    width: 20%;
+    padding: 10px;
+    background: #704500;
+    color: white;
+    font-size: 20px;
+    border: 1px solid grey;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    font-family: 'Arvo';
+  }
+
+.register-container button:hover {
+    background: #41cef9;
+  }
+  
+@media screen and (max-width: 1300px) {
+    .register-container {
+        float: none;
+        display: block;
+        width: 70%;
+        padding-top: 6em;
+    }
+    .register-container input {
+        width: 90%;
+        margin-left: 10px;
+    } 
+
+    .register-container button {
+        width: 20%;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .register-container {
+        float: none;
+        display: block;
+        width: 80%;
+        padding-top: 6em;
+    }
+    .register-container input{
+        width: 90%;
+        margin-left: 10px;
+    } 
+    .register-container button {
+        width: 40%;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .register-container {
+        float: none;
+        display: block;
+        width: 100%;
+        padding-top: 6em;
+    }
+    .register-container input {
+        width: 95%;
+        margin-left: 10px;
+    } 
+    .register-container button {
+        width: 30%;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
