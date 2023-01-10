@@ -1,7 +1,7 @@
 # Bookstore_EXPRESS-HANDLEBARS
 A simple online bookstore made using HTML 5, CSS3, JavaScript, Node JS, Express, and Express-Handlebars.
 
-🔗 Deployed on Heroku: https://bookstore-expresshandlebars.herokuapp.com/
+🔗 Deployed on Heroku: https://bookstore-expresshandlebars.herokuapp.com/ (JAN 2023 UPDATE: CAN'T BE OPEN ON HEROKU - free Heroku Dynos are no longer available)
 
 •	All back-end functionality were completed with Node JS and Express. 
 
